@@ -1,4 +1,4 @@
-import { Icon } from "@rneui/themed";
+import MaterialIcon from "react-native-vector-icons/MaterialIcons";
 
 // constants
 import { SCREENS } from "../constants/screenNames";
@@ -13,13 +13,28 @@ export const renderIcon = (color: string, route: RouteInterface, size: number) =
   switch (route.name) {
     case SCREENS.HOME.STACK:
       return (
-        <Icon type="material-community" name="home" color={color} size={size} />
+        <MaterialIcon name="home" color={color} size={size} />
       );
     case SCREENS.USER.STACK:
       return (
-        <Icon
-          type="material-community"
-          name="account"
+        <MaterialIcon
+          name="manage-accounts"
+          color={color}
+          size={size}
+        />
+      );
+    case SCREENS.NOTIFICATIONS.STACK:
+      return (
+        <MaterialIcon
+          name="announcement"
+          color={color}
+          size={size}
+        />
+      );
+    case SCREENS.TRAINING.STACK:
+      return (
+        <MaterialIcon
+          name="fitness-center"
           color={color}
           size={size}
         />
