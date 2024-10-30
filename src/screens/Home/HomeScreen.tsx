@@ -1,10 +1,11 @@
 import { Text, View } from 'react-native'
-import { ScreenWrapper } from "../components/ScreenWrapper";
+import { ScreenWrapper } from "../../components/ScreenWrapper";
+
 export const HomeScreen = () => {
     return (
       <ScreenWrapper>
         <View>
-          <Text> HOME! </Text>
+          <Text>Home Screen</Text>
         </View>
       </ScreenWrapper>
     )
