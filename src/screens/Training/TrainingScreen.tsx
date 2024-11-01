@@ -6,7 +6,9 @@ import { SCREENS } from '../../constants/screenNames';
 
 export const TrainingScreen = (props: any) => {
   const { navigation } = props;
-  const goToRoutine = () => navigation.navigate(SCREENS.TRAINING.ROUTINE);
+  const goToRoutine = () => navigation.navigate(SCREENS.TRAINING.STACK, {
+    screen: SCREENS.TRAINING.ROUTINE
+  });
 
     return (
       <ScreenWrapper>
