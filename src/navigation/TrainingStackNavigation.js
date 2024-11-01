@@ -2,6 +2,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 // screens
 import { TrainingScreen } from "../screens/Training/TrainingScreen";
+import { RoutineScreen } from "../screens/Training/RoutineScreen";
 
 // constants
 import { SCREENS } from "../constants/screenNames";
@@ -16,6 +17,7 @@ export function TrainingStack() {
       })}
     >
       <Stack.Screen name={SCREENS.TRAINING.KEY} component={TrainingScreen} />
+      <Stack.Screen name={SCREENS.TRAINING.ROUTINE} component={RoutineScreen} />
     </Stack.Navigator>
   );
 }

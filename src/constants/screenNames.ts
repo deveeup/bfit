@@ -9,6 +9,7 @@ export const SCREENS = {
   },
   TRAINING: {
     KEY: "Training",
+    ROUTINE: "Routine",
     STACK: "TrainingStack",
   },
   USER: {
